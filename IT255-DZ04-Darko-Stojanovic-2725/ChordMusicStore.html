@@ -1,0 +1,78 @@
+<html>
+
+	<head>
+	<title>Chord Music Store</title> 
+	<link rel = "stylesheet" href = "CSS/style2.css" type = "text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta charset = "UTF-8"> 
+	
+	<script>
+		
+		function goto(){
+			window.location.href="maps.html";
+		}
+		
+		
+	</script>
+	<script>
+	function funkcija(){
+			 confirm("Sajt je u izradi!");
+			 document.getElementById("muz").innerHTML = "Uskoro!";
+			}
+	</script>
+	</head>
+
+	<body>
+	
+		<div id = "header"> 
+			<div id="wrappergore">
+				<div id = "gornjalinija"> 
+					<h2 id="muz">Chord Muzicka Prodavnica</h2>
+				</div>
+				<div id="logo">
+					<img src="res/chordLogo.jpg">
+					</img>
+				</div>
+		<div id="pretraga">
+			<form> 
+				<input type = "text" placeholder = "Pretraga:">
+					<input type = "submit" value = "Pretraga"> 
+			</form>
+		</div>
+		<div id="meni">
+		
+			<a href="#">
+				<div class="menuitem"> 
+				Pocetna 
+				</div>
+			</a>
+			
+			<a href="#">
+				<div class="menuitem"> 
+				Muzicka oprema 
+				</div>
+			</a>
+			
+			<a href="#">
+				<div class="menuitem" onclick="funkcija()"> 
+				O nama 
+				</div>
+			</a>
+			
+			<a href="#">
+				<div class="menuitem" onclick="goto()"> 
+				Kontakt 
+				</div>
+			</a>
+			
+		</div>
+		
+		<div id="Slika">
+			<img src="res/store.jpg" alt="Store pic">
+			</img>
+		</div>
+	</div>
+	</div>
+	</body>
+
+</html>
