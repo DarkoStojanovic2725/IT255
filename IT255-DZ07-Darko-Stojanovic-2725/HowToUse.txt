@@ -1,0 +1,9 @@
+Za koriscenje POST servisa potrebno je pozvati funkciju login na sledeci nacin:
+http://localhost/it255/api.php?action=login
+Potrebno je uneti parametre email adresa i password, ukoliko se poklapaju sa podacima u bazi postman vraca potvrdu.
+
+Za koriscenje GET servisa:
+Poziva se funkcija http://localhost/it255/api.php?action=get
+Postman ce iz baze podataka uzeti sve podatke i vratiti ih korisniku.
+
+Ovakav rad POST i GET servisa zamisljen je za implementaciju na web sajtovima gde bi korisnici unosili svoje podatke za login.
