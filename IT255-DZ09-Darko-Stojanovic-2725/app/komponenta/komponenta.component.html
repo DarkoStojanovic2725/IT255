@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">O nama</a></li>
+        <li><a href="#services">Usluge</a></li>
+        <li><a href="#portfolio">Radno okruzenje</a></li>
+        <li><a href="#pricing">Cene</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center">
+  <h1>Xtreme PC Zone</h1>
+<form (submit)="addTekst()" class="form-inline">
+  <div class="input-group">
+    <input type="text" [(ngModel)]="item" name="sdsa" class="form-control" size="50" placeholder="Email Adresa" required>
+
+  </div>
+</form>
+</div>
+<h3 class="text-center"> Lista sabskrajbovanih korisnika</h3>
+<ul>
+  <li *ngFor="let komp of komponenta">
+    {{komp.text}}
+    <!--<button class="btn btn-danger" (click)="brisi(komp.text)">Obrisi</button>  za brisanje iz liste, napravljena funkcija!-->
+  </li>
+</ul>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>O nasoj kompaniji</h2>
+      <h4>Kompanija Xtreme PC zone osnovana je 2013. godine sa ciljem da pomogne ljudima
+        u oblasti informacionih tehnologija.
+      </h4>
+      <p>Kompanija se nalazi u Beogradu. Bavimo se nabavkom PC delova, popravkom racunara,
+        svim softverskim instalacijama.Mi, u Xtreme-u, shvatamo da ukoliko želimo da ostvarimo uspeh to možemo samo uz kreativne,
+        pametne i vredne ljude.
+        U Xtreme-ovim kancelarijama naićićete na izazovne projekte i pametne ljude spremne da promene svet.
+        Xtreme nije konvencijalno preduzeće i to ne namerava da postane.
+        Znamo da je svaki zaposleni važan deo strukture firme i da ima šta da kaže i kao takav sastavni je deo našeg uspeha.
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-home logo"></span>
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-center">
+  <h2>Usluge</h2>
+  <h4>Sta Vam nudimo?</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-circle-arrow-down logo-small"></span>
+      <h4>Nabavka delova</h4>
+      <p>Nabavljamo delove po potrebi.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>Servis racunara</h4>
+      <p>Servisiramo racunare u najkracem roku.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-refresh logo-small"></span>
+      <h4>Instalacija softvera</h4>
+      <p>Instaliramo operativne sisteme i prateci softver.</p>
+    </div>
+  </div>
+</div>
