@@ -1,0 +1,23 @@
+<div class="col-lg-12">
+  <div class="row">
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="name"
+               [(ngModel)]="name">
+      </div>
+    </form>
+  </div>
+</div>
+<div class="col-lg-12">
+  Korisnici
+</div>
+<div class="col-lg-12">
+  <div *ngFor="let user of data | search:name">
+    Ime: {{user.Name}}
+    <br/> Prezime: {{user.lastName}}
+    <br/>
+    Email: {{user.email}}
+    <br/> Grad: {{user.city}}
+    <br/> <br/>
+  </div>
+</div>
