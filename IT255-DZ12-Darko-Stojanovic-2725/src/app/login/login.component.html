@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+<form role="form" [formGroup]="loginForm">
+  <div class="alert alert-danger" style="display: none;">
+  </div>
+  <div class="form-group">
+    <label for="username">Korisnicko ime:</label>
+    <input type="text" class="form-control" formControlName='username'>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Lozinka:</label>
+    <input type="password" class="form-control" formControlName='password'>
+  </div>
+  <button (click)="onLogin()" class="btn btn-default">Login</button>
+</form>
+     <h2>
+       <span class="label label-success">{{poruka}}</span>
+     </h2>
+    </ul>
+  </div>
+</div>
